@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMONAC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+
 </head>
 
-<body>
+<body onload="AOS.init();">
 
     <!--start nav-->
     <nav>
-
+        <!--logo-->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Course</a></li>
+            <li><a href="#courses">Course</a></li>
         </ul>
 
-        <!--logo-->
         <figure class="logo_nav">
             <img src="./image/logo (1).png" alt="logo">
         </figure>
+
 
         <!--button-->
         <div class="button">
             <a class="Log_in">Log in</a>
             <a class="Sign_Up">Sign Up</a>
         </div>
+
+
     </nav>
     <!--end nav-->
 
@@ -39,7 +45,7 @@
 
         <!--Conteant header-->
         <div class="content_header">
-            <h1> Improve your<br><span class="address">Skills</span>Faster </h1>
+            <h1 data-aos="fade-up"> Improve your<br><span class="address">Skills</span>Faster </h1>
 
             <div class="content">
                 <p>Lorem ipsum, dolor sit amet consectetur.<br>
@@ -51,8 +57,8 @@
             </div>
         </div>
         <!--Image header-->
-        <figure class="image_header">
-            <img src="./image/header.png" alt="">
+        <figure class="image_header" data-aos="zoom-in">
+            <img src="./image/header.png" alt="" loading="lazy">
         </figure>
 
 
@@ -61,54 +67,48 @@
     </header>
     <!--end header-->
 
-    <!--start main-->
     <main>
 
         <!-- Stats Section -->
-        <section class="stats ">
+        <section class="stats">
             <div class="stat">
-                <h2> 4.5k</h2>
-                <p> Reviews</p>
+                <h2>4.5k</h2>
+                <p>Reviews</p>
             </div>
 
-            <span>|</span>
-
             <div class="stat">
-                <h2> 30M </h2>
+                <h2>30M</h2>
                 <p>Enrollments</p>
             </div>
 
-            <span>|</span>
-
             <div class="stat">
-                <h2> 2M+ </h2>
-                <p> Learners</p>
+                <h2>2M+</h2>
+                <p>Learners</p>
             </div>
 
-            <span>|</span>
-
             <div class="stat">
-                <h2>1k+ </h2>
-                <p> Popular Courses</p>
+                <h2>1k+</h2>
+                <p>Popular Courses</p>
             </div>
         </section>
 
-        <!--About Section-->
+        <!-- About Section -->
         <section class="about">
             <figure class="image_about">
-                <img src="./image/about_image.png" alt="">
+                <img src="./image/about_image.png" alt="About Us">
             </figure>
             <div class="about_section">
-                <h2>We Provide<br> <span class="about_span">Smart</span> Online<br> Education</h2>
+                <h2>We Provide<br>
+                    <span class="about_span">Smart</span> Online<br> Education
+                </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing <br>
-                    elit.Qui omnis optio voluptates atque consequuntur.<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Qui omnis optio voluptates atque consequuntur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui omnis optio voluptates atque consequuntur. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Qui omnis optio
+                    voluptates atque consequuntur.
                 </p>
             </div>
         </section>
-
         <!-- Features Section -->
         <section class="features">
             <div class="feature_1">
@@ -168,10 +168,9 @@
                 </p>
             </div>
         </section>
-
         <!--  Courses Section -->
 
-        <section class="courses">
+        <section class="courses" id="courses">
             <h2>Popular <span>Courses</span></h2>
 
             <div class="course_list">
@@ -208,7 +207,6 @@
 
             </div>
         </section>
-
         <!--start Learn-->
         <section class="Learn">
             <div class="Learn_content">
@@ -232,7 +230,6 @@
                 <img src="./image/promotionImg.png" alt="">
             </figure>
         </section>
-
         <!-- Get Started Section -->
         <section class="Get_Started">
 
@@ -250,7 +247,6 @@
             </div>
         </section>
 
-
         <!-- Mobile App Section -->
         <section class="mobile_app">
             <h2>Try Learning Free<br> on <span class="app">Mobile App</span></h2>
@@ -262,9 +258,8 @@
             </ul>
         </section>
 
-    </main>
-    <!--end main-->
 
+    </main>
     <!--start footer-->
     <footer>
         <div class="content_footer">
@@ -273,8 +268,8 @@
                     <img id="logo_2" src="./image/logo.png" alt="">
                 </figure>
                 <p>Lorem ipsum, dolor sit amet consectetur elit.<br>
-                    Incidunt maxime voluptatem error inventore nesciunt 
-                   
+                    Incidunt maxime voluptatem error inventore nesciunt
+
                 </p>
 
             </div>
@@ -314,6 +309,9 @@
 
     </footer>
     <!--end footer-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
